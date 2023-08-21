@@ -1,7 +1,7 @@
 # nllb-200-azurefunc
 Azure Function App for The Facebook NLLB-200 Translation Model, hardcoded to translate Albanian to English, but simply change to your needs by swapping language codes from the FLORES 200 list
 
-Created following the following Azure Quickstart guide for Python Azure functions:
+Created following this Azure Quickstart guide for Python Azure functions:
 https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-python?tabs=powershell%2Cazure-powershell&pivots=python-mode-configuration
 
 The guide lists a few deps you will need:
