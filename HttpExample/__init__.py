@@ -4,11 +4,9 @@ import azure.functions as func
 
 
 
-#text = "Gjuhë zyrtare në Republikën e Kosovës janë Gjuha Shqipe dhe Gjuha Serbe."
+input_lang = "als_Latn" 
 
-input_lang = "als_Latn"  #predictions[0][0].replace('__label__', '')
-
-
+# version of nllb you wish to use, more params is more powerful
 checkpoint = 'facebook/nllb-200-distilled-600M'
 # checkpoint = 'facebook/nllb-200-1.3B'
 # checkpoint = 'facebook/nllb-200-3.3B'
@@ -31,7 +29,9 @@ translation_pipeline = pipeline('translation',
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
-    
+
+  # Add to URL param ?text=.... to input text to the API
+  
     text = req.params.get('text')
     
     output = translation_pipeline(text)
