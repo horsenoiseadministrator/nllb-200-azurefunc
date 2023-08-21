@@ -4,6 +4,7 @@ Azure Function App for The Facebook NLLB-200 Translation Model, hardcoded to tra
 NOTE: this requires more processing power than the default Azure Functions dynamic tier - this will need to be deployed to a higher tier Appservice provision.
 
 
+_the local test deployment of the function as an API on localhost:_
 
 ![image](https://github.com/horsenoiseadministrator/nllb-200-azurefunc/assets/103950749/35f32f94-746a-424e-b6e7-a5079792a598)
 
